@@ -1,0 +1,17 @@
+[
+  {
+    "pattern" : "/$",
+    "route" : "#/",
+    "name": "Home"
+  },
+  {
+    "pattern" : "/parameters",
+    "route" : "#/parameters",
+    "name": "Parameters"
+  },
+  {
+    "pattern" : "/state2",
+    "route" : "#/state2",
+    "name": "State2"
+  }
+]

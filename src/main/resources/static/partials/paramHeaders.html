@@ -1,0 +1,18 @@
+<h2>Parameters</h2>
+
+<table class="table table-striped">
+    <thead>
+        <th>id</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="paramHeader in paramHeaders track by $index"  ng-click="getParameter(paramHeader)">
+           <td>{{paramHeader.id.paramId}}</td>
+           <td>{{paramHeader.description}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="well">
+    {{selectedParamHeader}}
+</p>

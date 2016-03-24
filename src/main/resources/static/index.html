@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyLib</title>
+
+    <!--BootStrap-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <!-- AngularJS  -->
+    <script src="/components/angular/angular.min.js"></script>
+    <script src="/components/angular-resource/angular-resource.min.js"></script>
+    <script src="/components/angular-animate/angular-animate.min.js"></script>
+    <!-- Angular Strap  -->
+    <script src="/components/angular-strap/dist/angular-strap.min.js"></script>
+    <script src="/components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+    <!-- Angular Motion  -->
+    <script src="/components/angular-motion/dist/angular-motion.min.css"></script>
+
+    <!--UI-Router-->
+    <script src="/components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="/js/easyLibApp_mod.js"></script>
+    <script src="/js/easyLibApp_routes.js"></script>
+    <script src="/js/easyLibApp_ParamHeader.js"></script>
+    <script src="/js/easyLibApp_MenuCtrl.js"></script>
+
+</head>
+<body ng-app="easyLibApp">
+
+
+<nav class="navbar navbar-default" role="navigation" bs-navbar ng-controller="MenuCtrl">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="font-size: x-large; color:red">&#127770;</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="item in menuitems track by $index" data-match-route="{{item.pattern}}">
+                    <a href="{{item.route}}">{{item.name}}</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div ui-view></div>
+
+</body>
+</html>
