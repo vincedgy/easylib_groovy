@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default" role="navigation" bs-navbar>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" style="font-size: x-large; color:red">&#127770;</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="item in menuCtrl.menuitems track by $index" data-match-route="{{item.pattern}}">
+                    <a ui-sref="{{item.state}}">{{item.name}}</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

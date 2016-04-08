@@ -7,8 +7,9 @@
     angular.module('easyLibApp', [
         'ui.router',
         'mgcrea.ngStrap',
-        'ngAnimate',
-        'easyLibParamHeader'
+        //'ngAnimate',
+        'parameterList',
+        'menu'
         ]);
 
 })();

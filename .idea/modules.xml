@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/easylib.iml" filepath="$PROJECT_DIR$/.idea/modules/easylib.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/easylib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/easylib_main.iml" group="easylib" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/easylib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/easylib_test.iml" group="easylib" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/test/test.iml" filepath="$PROJECT_DIR$/src/test/test.iml" />
     </modules>
   </component>
 </project>

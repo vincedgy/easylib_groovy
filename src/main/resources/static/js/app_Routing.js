@@ -5,7 +5,7 @@
     'use strict';
 
     angular.module('easyLibApp').config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/home");
+        $urlRouterProvider.otherwise("/");
 
         $stateProvider
             .state('home', {
@@ -14,13 +14,12 @@
             })
             .state('parameters', {
                 url: "/parameters",
-                templateUrl: "partials/paramHeaders.html",
-                controller : "ParamHeaderCtrl"
+                templateUrl: "partials/parameterList.html"
             })
             .state('state2', {
                 url: "/state2",
                 templateUrl: "partials/state2.html",
-                controller : "ParamHeaderCtrl"
+                controller : "parameterListCtrl"
             })
         ;
 

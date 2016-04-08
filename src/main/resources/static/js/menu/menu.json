@@ -1,17 +1,17 @@
 [
   {
     "pattern" : "/$",
-    "route" : "#/",
+    "state" : "home",
     "name": "Home"
   },
   {
     "pattern" : "/parameters",
-    "route" : "#/parameters",
+    "state" : "parameters",
     "name": "Parameters"
   },
   {
     "pattern" : "/state2",
-    "route" : "#/state2",
+    "state" : "state2",
     "name": "State2"
   }
 ]
