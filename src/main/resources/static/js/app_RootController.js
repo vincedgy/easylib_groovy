@@ -7,9 +7,12 @@
     angular.module('easyLibApp')
         .controller('rootCtrl', RootCtrl);
 
-    RootCtrl.$inject = ['$rootScope'];
-    function RootCtrl($rootScope) {
+    RootCtrl.$inject = ['$rootScope','$location', '$window'];
+    function RootCtrl($rootScope, $location, $window) {
         $rootScope.detailsAreVisible=true;
+        $rootScope.location=$location;
+        $rootScope.windowHref = $window.location.href;
+
     };
 
 

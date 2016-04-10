@@ -4,7 +4,9 @@
 (function() {
     'use strict';
 
-    angular.module('easyLibApp').config(function($stateProvider, $urlRouterProvider) {
+    angular.module('easyLibApp').config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+        $locationProvider.html5Mode(true).hashPrefix('!');
+        
         $urlRouterProvider.otherwise("/");
 
         $stateProvider

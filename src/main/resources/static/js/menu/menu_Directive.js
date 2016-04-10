@@ -3,6 +3,7 @@
  */
 (function() {
     'use strict';
+
     angular.module('menu')
         .directive('menuBar', function() {
         return {
